@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: 
+        "brand-header brand-header brand-header"
+        "nav-links nav-links nav-links"
+        "story-1 story-2 story-3"
+        "story-4 story-5 story-5";
+}
+
+.brand-header {
+    display: flex;
+    justify-content: center;
+    grid-area: brand-header;
+}
+
+.brand {
+    font-size: 55px;
+    margin-top: 25px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 28px;
+    margin: 0px 28px 0 28px;
+    font-size: 28px;
+    grid-area: nav-links;
+}
+
+.site-section {
+   list-style-type: none;
+}
+
+.section-link {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-link:hover {
+    text-decoration: underline;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.story-1 {
+    grid-area: story-1;
+    margin-left: 28px;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+    border-right: 2px solid black;
+    margin-right: 29px;
+}
+
+.story-4 {
+    grid-area: story-4;
+    margin-left: 29px;
+}
+
+.story-5 {
+    grid-area: story-5;
+    border-right: 2px solid black;
+    margin-right: 29px;
+}
+
+.story-1, .story-2, .story-3 {
+    height: 447px;
+}
+
+.story-4, .story-5 {
+    height: 351px;
+}
+
+.article-title {
+    margin-top: 34px;
+    font-size:  28px;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+}
+
+.article-text {
+    margin: 0;
+    font-size: 15px;
+    margin-left: 9px;
+}
+
+.story-1 .article-text {
+    margin-right: 13px;
+}
+
+.story-1 .article-text:last-child {
+    margin-top: 16px;
+}
+
+.article-img {
+    width: 235px;
+    height: 235px;
+}
+
+.story-2 .article-text {
+   margin-top: 15px;
+}
+
+.story-2 .article-text:nth-of-type(2) {
+    margin-right: 9px;
+}
+
+.story-3 .article-text:last-child {
+    margin-top: 16px;
+    margin-right: 13px;
+}
+
+.story-4 .article-text:nth-of-type(1) {
+    margin-right: 4px;
+}
+
+.story-4 .article-text:last-child {
+    margin-top: 15px;
+    margin-right: 4px;
+}
+
+.story-5 .article-text:nth-of-type(2) {
+    margin-top: 14px;
+    margin-right: 22px;
+}
+
+.story-5 .article-text:nth-of-type(3) {
+    margin-top: 17px;
+    margin-right: 4px;
+}
